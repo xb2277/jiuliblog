@@ -9,14 +9,14 @@ export function Projects() {
       desc: "结合大语言模型与传统八字命理，输入出生信息或生辰八字，即可进行深度解析与趋势推演。前端采用React，逻辑层由AI辅助生成。",
       tech: ["React", "Tailwind", "LLM API"],
       status: "在线运行",
-      image: "/ai-bazi-system.jpg",
+      image: "ai-bazi-system.jpg",
     },
     {
       title: "梅花卦典 占卜系统",
       desc: "梅花卦典结合了三位高阶先师的占卜秘笈整理，遇事不决卜一卦，很准！",
       tech: ["React", "AI", "卜卦"],
       status: "在线运行",
-      image: "/meihua-app.jpg",
+      image: "meihua-app.jpg",
       link: "https://xb2277.github.io/meihua/"
     },
     {
@@ -24,7 +24,7 @@ export function Projects() {
       desc: "本人也是网络小说作者，结合自己的实用习惯，自己开发的小说写作工具，特点是在写作过程中，AI能实时给出灵感和优化建议。",
       tech: ["VS code", "Python", "Vite"],
       status: "在线运行",
-      image: "/biling-app.jpg",
+      image: "biling-app.jpg",
       link: "https://xb2277.github.io/novel-ai/"
     },
     {
@@ -32,7 +32,7 @@ export function Projects() {
       desc: "帮朋友开发的一个宝可梦卡牌管理器，可以帮助宝可梦卡牌玩家管理自己的卡牌，实时查看自己卡牌的估值和自己的盈利情况。",
       tech: ["WorkBuddy", "Claude code", "LocalStorage"],
       status: "在线运行",
-      image: "/pokemon-cards.jpg",
+      image: "pokemon-cards.jpg",
       link: "https://xb2277.github.io/pokemon-cards/"
     }
   ];

@@ -51,7 +51,7 @@ export function Contact() {
           <div className="w-48 h-48 bg-white p-2 rounded-xl relative overflow-hidden group">
             {/* WeChat QR Code */}
             <ImageWithFallback 
-              src="/wechat-qr.jpg"
+              src="wechat-qr.jpg"
               alt="WeChat QR Code"
               className="w-full h-full object-cover rounded-lg opacity-95 group-hover:opacity-100 transition-opacity"
             />

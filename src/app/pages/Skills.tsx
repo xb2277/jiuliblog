@@ -58,14 +58,14 @@ export function Skills() {
         <h2 className="text-2xl font-bold font-serif tracking-tight leading-tight text-white mb-8 border-l-4 border-emerald-500 pl-4">符箓壁纸展示</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { src: "/talisman-01.webp", title: "五帝钱·镇煞符" },
-            { src: "/talisman-02.webp", title: "太上敕令·五雷符" },
-            { src: "/talisman-03.webp", title: "镇宅平安·紫微讳" },
-            { src: "/talisman-04.webp", title: "雷祖敕令·除厄符" },
-            { src: "/talisman-05.webp", title: "九天玄元·化煞符" },
-            { src: "/talisman-06.webp", title: "太上老君·急急如律令" },
-            { src: "/talisman-07.webp", title: "勅令·敕召万神" },
-            { src: "/talisman-08.webp", title: "北斗星君·财神到" },
+            { src: "talisman-01.webp", title: "五帝钱·镇煞符" },
+            { src: "talisman-02.webp", title: "太上敕令·五雷符" },
+            { src: "talisman-03.webp", title: "镇宅平安·紫微讳" },
+            { src: "talisman-04.webp", title: "雷祖敕令·除厄符" },
+            { src: "talisman-05.webp", title: "九天玄元·化煞符" },
+            { src: "talisman-06.webp", title: "太上老君·急急如律令" },
+            { src: "talisman-07.webp", title: "勅令·敕召万神" },
+            { src: "talisman-08.webp", title: "北斗星君·财神到" },
           ].map((item, i) => (
             <div key={i} className="aspect-[9/16] bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden relative group card-hover">
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent z-10"></div>

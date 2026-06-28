@@ -24,7 +24,7 @@ const featuredProjects = [
     title: "梅花卦典 占卜系统",
     desc: "梅花卦典结合了三位高阶先师的占卜秘笈整理，遇事不决卜一卦，很准！",
     tags: ["React", "AI", "卜卦"],
-    img: "/meihua-app.jpg",
+    img: "meihua-app.jpg",
     category: "AI应用",
     link: "https://xb2277.github.io/meihua/",
   },
@@ -32,35 +32,35 @@ const featuredProjects = [
     title: "数字道藏检索",
     desc: "以向量数据库构建道家典籍智能检索系统，支持语义搜索与跨经关联。",
     tags: ["Vector DB", "NLP", "道藏"],
-    img: "/daozang-search.jpg",
+    img: "daozang-search.jpg",
     category: "AI应用",
   },
   {
     title: "AI 生辰八字分析",
     desc: "结合子平与盲派八字原理的智能分析工具，不是很特殊的八字，分析结果值得参考。",
     tags: ["Generative AI", "八字", "分析"],
-    img: "/ai-bazi.jpg",
+    img: "ai-bazi.jpg",
     category: "AI应用",
   },
   {
     title: "五雷平安符",
     desc: "以九玄法脉精义绘制，凝聚天地正能量，护宅安家保平安、辟邪驱煞镇阴气，可随身携带。",
     tags: ["符箓", "驱邪", "平安"],
-    img: "/talisman-wulei.jpg",
+    img: "talisman-wulei.jpg",
     category: "法器符箓",
   },
   {
     title: "流年转运符",
     desc: "专为流年不顺、运势低迷者绘制，疏通气场、激活正缘，助人转危为安、逢凶化吉。",
     tags: ["符箓", "开运", "转运"],
-    img: "/talisman-zhuan.jpg",
+    img: "talisman-zhuan.jpg",
     category: "法器符箓",
   },
   {
     title: "招财聚气阵",
     desc: "依奇门财位布局之法，结合五行生克制化，凝聚财气，助旺财运与事业。",
     tags: ["奇门遁甲", "招财", "开库"],
-    img: "/talisman-cai.jpg",
+    img: "talisman-cai.jpg",
     category: "法器符箓",
   },
 ];
@@ -162,7 +162,7 @@ export function Home() {
             <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-zinc-800 relative group">
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent z-10"></div>
               <ImageWithFallback
-                src="/avatar.jpg"
+                src="avatar.jpg"
                 alt="九离师兄 - 问道于山"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -170,7 +170,7 @@ export function Home() {
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden border border-zinc-700">
                     <ImageWithFallback
-                      src="/cic-logo.png"
+                      src="cic-logo.png"
                       alt="CIC 法脉"
                       className="w-full h-full object-cover"
                     />
@@ -347,9 +347,9 @@ export function Home() {
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: "九玄法脉传承", desc: "正本清源，性命双修的古老智慧与实证体验。以心印心，口传心授，延续千年法脉之精华。", icon: "🌀", img: "/fabao-faxiang.webp" },
-            { title: "CIC、祝由与符箓", desc: "以无形之气显化有形之术法，沟通天地信息之媒介。将道法精义融入每一个信息的显化之中。", icon: "✧", img: "/fabao-fuji.webp" },
-            { title: "AI/Web 应用", desc: "将传统道法转化为数字模型，借AI计算工具与效率平台，让古老智慧以数字形态服务当代众生。", icon: "◈", img: "/fabao-ai.webp" },
+            { title: "九玄法脉传承", desc: "正本清源，性命双修的古老智慧与实证体验。以心印心，口传心授，延续千年法脉之精华。", icon: "🌀", img: "fabao-faxiang.webp" },
+            { title: "CIC、祝由与符箓", desc: "以无形之气显化有形之术法，沟通天地信息之媒介。将道法精义融入每一个信息的显化之中。", icon: "✧", img: "fabao-fuji.webp" },
+            { title: "AI/Web 应用", desc: "将传统道法转化为数字模型，借AI计算工具与效率平台，让古老智慧以数字形态服务当代众生。", icon: "◈", img: "fabao-ai.webp" },
           ].map((item, i) => (
             <AnimatedSection key={i} delay={0.15 * i}>
               <div className="p-8 rounded-2xl bg-zinc-900/30 border border-zinc-800/50 hover:border-emerald-500/30 hover:bg-zinc-900/60 transition-all duration-300 h-full">
