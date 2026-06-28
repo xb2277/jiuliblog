@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import path from 'path'
+import fs from 'fs'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
@@ -38,4 +39,27 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+
+  // GitHub Pages SPA fallback: copy index.html → 404.html
+  build: {
+    rollupOptions: {
+      plugins: [
+        {
+          name: 'spa-fallback',
+          closeBundle: {
+            order: 'post',
+            handler: () => {
+              const dist = path.resolve(__dirname, 'dist')
+              const src = path.join(dist, 'index.html')
+              const dest = path.join(dist, '404.html')
+              if (fs.existsSync(src)) {
+                fs.copyFileSync(src, dest)
+                console.log('📄  404.html generated for SPA fallback')
+              }
+            },
+          } as any,
+        },
+      ],
+    },
+  },
 })

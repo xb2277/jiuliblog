@@ -18,4 +18,6 @@ export const router = createBrowserRouter([
       { path: "contact", Component: Contact },
     ],
   },
-]);
+], {
+  basename: "/jiuliblog",
+});
